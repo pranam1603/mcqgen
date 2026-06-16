@@ -1,12 +1,9 @@
 streamlit
-langchain
-langchain_openai
-langchain_community
 openai
-json
-langchain_core
+langchain
+langchain-openai
+langchain-community
+langchain-core
 python-dotenv
-traceback
-loadenv
 pandas
 PyPDF2
