@@ -11,8 +11,11 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 
 
-load_dotenv()
-OPENAI_KEY=os.getenv("OPENAI_KEY")
+# load_dotenv()
+# OPENAI_KEY=os.getenv("OPENAI_KEY")
+import streamlit as st
+
+OPENAI_KEY = st.secrets["OPENAI_KEY"]
 
 llm = ChatOpenAI(api_key=OPENAI_KEY, model_name="gpt-3.5-turbo", temperature=0.7)
 
